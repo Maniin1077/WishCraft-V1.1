@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/WishCraft-V1.1/',  // <----- Add this line here
   server: {
     host: "::",
     port: 8080,
