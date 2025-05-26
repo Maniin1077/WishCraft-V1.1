@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/WishCraft-V1.1/',  // base path for GitHub Pages repo subfolder
+  base: mode === 'production' ? '/WishCraft-V1.1/' : '/',
 
   server: {
     host: "::",
